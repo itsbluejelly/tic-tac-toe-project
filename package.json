@@ -1,0 +1,22 @@
+{
+  "name": "tic-tac-toe",
+  "version": "1.0.0",
+  "description": "An exciting online multiplayer tic-tac-toe game",
+  "main": "tailwind.config.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "prettier": "^2.8.8"
+  },
+  "devDependencies": {
+    "prettier-plugin-tailwindcss": "^0.3.0"
+  },
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./docs/css/style.css --watch",
+    "prettier": "npx prettier --write **/*.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Tech Titans">
+        <meta name="description" content="A multiplayer tic-tac-toe game">
+        <title>Tic-Tac-Toe-Toe by Tech Titans</title>
+        <!--Tic-Tac-Toe icon-->
+        <link rel="icon" href="./img/tic-tac-toe.png" type="image/x-icon">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body class="min-h-screen scroll-auto flex flex-col justify-center items-center bg-green-400">
+            <!-- TO SHOW TYPE OF PLAYER -->
+        <div id="show-player" class="text-center bg-black text-white p-4 mb-4 font-bold text-lg hidden"></div>
+
+            <!-- choose a player menu -->
+        <div div class=" bg-white p-4 text-lg font-semibold rounded-2xl selection-box">
+            <h1 class="font-bold text-center bg-black text-white rounded-2xl">Tic-Tac-Toe</h1>
+            <h2 class="font-bold"> Choose the Icon you shall use</h2>
+            
+            <div class="flex flex-col bg-green-600 gap-2">
+                <div class="flex justify-around">
+                    <button class="playerX bg-green-300 mt-2 rounded-lg cursor-pointer border-white border-2" id="player-x-button">PLAYER X</button>
+                    <button class="playerO  bg-blue-300 mt-2 rounded-lg cursor-pointer border-white border-2" id="player-o-button">PLAYER O</button>
+                </div>
+                
+                <button class="text-center  bg-green-300 mt-2 rounded-lg cursor-pointer border-white border-2 w-[50%] mx-auto mb-3" id="play-game-button">PLAY GAME</button>
+            </div>
+        </div>
+
+        <div class="game-container flex-col hidden">
+            <div class="container mb-4 p-4 rounded-2xl bg-white grid grid-flow-row grid-cols-3 w-[300px] h-[300px] gap-2">
+                <div class="border-black border-[2px] rounded-lg flex justify-center items-center bg-blue-300 font-semibold text-3xl" id="cell" cellindex=0></div>
+                <div class="border-black border-[2px] rounded-lg flex justify-center items-center bg-blue-300 font-semibold text-3xl" id="cell" cellindex=1></div>
+                <div class="border-black border-[2px] rounded-lg flex justify-center items-center bg-blue-300 font-semibold text-3xl" id="cell" cellindex=2></div>
+                <div class="border-black border-[2px] rounded-lg flex justify-center items-center bg-blue-300 font-semibold text-3xl" id="cell" cellindex=3></div>
+                <div class="border-black border-[2px] rounded-lg flex justify-center items-center bg-blue-300 font-semibold text-3xl" id="cell" cellindex=4></div>
+                <div class="border-black border-[2px] rounded-lg flex justify-center items-center bg-blue-300 font-semibold text-3xl" id="cell" cellindex=5></div>
+                <div class="border-black border-[2px] rounded-lg flex justify-center items-center bg-blue-300 font-semibold text-3xl" id="cell" cellindex=6></div>
+                <div class="border-black border-[2px] rounded-lg flex justify-center items-center bg-blue-300 font-semibold text-3xl" id="cell" cellindex=7></div>
+                <div class="border-black border-[2px] rounded-lg flex justify-center items-center bg-blue-300 font-semibold text-3xl" id="cell" cellindex=8></div>
+              </div>
+      
+              <button id="reset-button" class=" bg-blue-300 mt-2 rounded-lg cursor-pointer border-white border-2">PLAY AGAIN</button>
+        </div>
+
+        <!-- ADDED FOOTER -->
+        <footer class="text-lg font-semibold">&copy;By:The Tech Titans</footer>
+        
+        <script src="./js/index.js"></script>
+    </body>
+</html>
