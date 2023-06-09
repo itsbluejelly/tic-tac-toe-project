@@ -15,51 +15,51 @@
     </head>
 
     <!-- BODY HAS A MIMIMUM HEIGHT 100VH, IS A FLEX ITEM, CONTENTS ARRANGED IN A COLUMN AND AT CENTER-->
-    <body class="min-h-screen scroll-auto flex flex-col justify-center items-center bg-green-400">
+    <body class="min-h-screen scroll-auto flex flex-col justify-center items-center bg-green-400 dark:bg-blue-900">
         <!-- MADE OF 4 SECTIONS, A HEDER TO SHOW PLAYER, A SELECTION MENU, THE GAMEPAD AND A FOOTER-->
         <!-- TO SHOW TYPE OF PLAYER,THE HEADER WHICH HAS CENTERED TEXT IS FIRST HIDDEN, HAS A PADDING AND MARGIN OF 16PX ALL ROUND -->
-        <div id="show-player" class="text-center bg-black text-white p-4 mb-4 font-bold text-lg hidden"></div>
+        <div id="show-player" class="text-center bg-black text-white p-4 mb-4 font-bold text-lg hidden dark:bg-white dark:text-black"></div>
 
         <!--SELECTION MENU, IT IS INITIALLY VISIBLE AND HAS A ROUNDED BORDER OF 16PX-->
-        <div div class=" bg-white p-4 text-lg font-semibold rounded-2xl selection-box">
-            <h1 class="font-bold text-center bg-black text-white rounded-2xl">Tic-Tac-Toe</h1>
-            <h2 class="font-bold"> Choose the Icon you shall use</h2>
+        <div div class=" bg-white p-4 text-lg font-semibold rounded-2xl selection-box dark:bg-black">
+            <h1 class="font-bold text-center bg-black text-white rounded-2xl dark:bg-white dark:text-black">Tic-Tac-Toe</h1>
+            <h2 class="font-bold dark:text-white"> Choose the Icon you shall use</h2>
             
             <!-- THE DIV CONTAIN THE THREE BUTTONS IS A FLEX ITEM WITH COLUMN ARRANGEMENT AND A GAP OF 8PX-->
-            <div class="flex flex-col bg-green-600 gap-2">
+            <div class="flex flex-col bg-green-600 gap-2 dark:bg-blue-700">
                 <!-- THE DIV HOLDING THE FIRST 2 BUTTONS IS A FLEX ITEM WITH SPACE AROUND JUSTIFY PROPERTY -->
                 <div class="flex justify-around">
                     <!-- EACH BUTTON HAS A MARGIN OF 8PX AT THE TOP AND A BORDER OF 2PX THICK -->
-                    <button class="playerX bg-green-300 mt-2 rounded-lg cursor-pointer border-white border-2" id="player-x-button">PLAYER X</button>
-                    <button class="playerO  bg-blue-300 mt-2 rounded-lg cursor-pointer border-white border-2" id="player-o-button">PLAYER O</button>
+                    <button class="p-2 bg-green-300 mt-2 rounded-lg cursor-pointer border-white border-2 dark:bg-slate-600 dark:border-black dark:text-white" id="player-x-button">PLAYER X</button>
+                    <button class="p-2 bg-blue-300 mt-2 rounded-lg cursor-pointer border-white border-2  dark:bg-green-800 dark:border-black dark:text-white" id="player-o-button">PLAYER O</button>
                 </div>
                 
-                <button class=" bg-green-300 mt-2 rounded-lg cursor-pointer border-white border-2 w-[50%] mx-auto mb-3" id="play-game-button">PLAY GAME</button>
+                <button class=" bg-green-300 mt-2 rounded-lg cursor-pointer border-white border-2 w-[50%] mx-auto mb-3  dark:bg-slate-600 p-2 dark:text-white dark:border-black" id="play-game-button">PLAY GAME</button>
             </div>
         </div>
 
         <!-- THE GAMEPAD IS A FLEX ITEM WHICH IS ARRANGED IN COLUMS BUT IS INITIALLY HIDDEN -->
         <div class="game-container flex-col hidden">
             <!-- THE DIV HOLDING THE 3X3 GRID DIVS HAS A MARGIN AND PADDING OF 16PX ALL ROUND, IS A SQUARE OF WIDRH AND HEIGHT 300PX, AND IS A GRID WITH 3 COLUMNS AND ROW FORMAT-->
-            <div class="container mb-4 p-4 rounded-2xl bg-white grid grid-flow-row grid-cols-3 w-[300px] h-[300px] gap-2">
+            <div class="container mb-4 p-4 rounded-2xl bg-white grid grid-flow-row grid-cols-3 w-[300px] h-[300px] gap-2 dark:bg-black">
                 <!-- EVERY CELL DIV HAS A MADE UP ATTRIBUTE("cellindex") WHICH SPECIFIES THEIR POSITION, IS A FLEX ITEM OF ROW ALIGNMENT AND HAS TEXT AT THE CENTER-->
-                <div class="border-black border-[2px] rounded-lg flex justify-center items-center bg-blue-300 font-semibold text-3xl" id="cell" cellindex=0></div>
-                <div class="border-black border-[2px] rounded-lg flex justify-center items-center bg-blue-300 font-semibold text-3xl" id="cell" cellindex=1></div>
-                <div class="border-black border-[2px] rounded-lg flex justify-center items-center bg-blue-300 font-semibold text-3xl" id="cell" cellindex=2></div>
-                <div class="border-black border-[2px] rounded-lg flex justify-center items-center bg-blue-300 font-semibold text-3xl" id="cell" cellindex=3></div>
-                <div class="border-black border-[2px] rounded-lg flex justify-center items-center bg-blue-300 font-semibold text-3xl" id="cell" cellindex=4></div>
-                <div class="border-black border-[2px] rounded-lg flex justify-center items-center bg-blue-300 font-semibold text-3xl" id="cell" cellindex=5></div>
-                <div class="border-black border-[2px] rounded-lg flex justify-center items-center bg-blue-300 font-semibold text-3xl" id="cell" cellindex=6></div>
-                <div class="border-black border-[2px] rounded-lg flex justify-center items-center bg-blue-300 font-semibold text-3xl" id="cell" cellindex=7></div>
-                <div class="border-black border-[2px] rounded-lg flex justify-center items-center bg-blue-300 font-semibold text-3xl" id="cell" cellindex=8></div>
+                <div class="border-black border-[2px] rounded-lg flex justify-center items-center bg-blue-300 font-semibold text-3xl dark:border-white dark:bg-slate-600 dark:text-white" id="cell" cellindex=0></div>
+                <div class="border-black border-[2px] rounded-lg flex justify-center items-center bg-blue-300 font-semibold text-3xl dark:border-white dark:bg-slate-600 dark:text-white" id="cell" cellindex=1></div>
+                <div class="border-black border-[2px] rounded-lg flex justify-center items-center bg-blue-300 font-semibold text-3xl dark:border-white dark:bg-slate-600 dark:text-white" id="cell" cellindex=2></div>
+                <div class="border-black border-[2px] rounded-lg flex justify-center items-center bg-blue-300 font-semibold text-3xl dark:border-white dark:bg-slate-600 dark:text-white" id="cell" cellindex=3></div>
+                <div class="border-black border-[2px] rounded-lg flex justify-center items-center bg-blue-300 font-semibold text-3xl dark:border-white dark:bg-slate-600 dark:text-white" id="cell" cellindex=4></div>
+                <div class="border-black border-[2px] rounded-lg flex justify-center items-center bg-blue-300 font-semibold text-3xl dark:border-white dark:bg-slate-600 dark:text-white" id="cell" cellindex=5></div>
+                <div class="border-black border-[2px] rounded-lg flex justify-center items-center bg-blue-300 font-semibold text-3xl dark:border-white dark:bg-slate-600 dark:text-white" id="cell" cellindex=6></div>
+                <div class="border-black border-[2px] rounded-lg flex justify-center items-center bg-blue-300 font-semibold text-3xl dark:border-white dark:bg-slate-600 dark:text-white" id="cell" cellindex=7></div>
+                <div class="border-black border-[2px] rounded-lg flex justify-center items-center bg-blue-300 font-semibold text-3xl dark:border-white dark:bg-slate-600 dark:text-white" id="cell" cellindex=8></div>
               </div>
               
               <!-- THE RESET BUTTON HAS A MARGIN AT THE TOP OF 8PX AND A BORDER RADIUS OF 8PX AND A BORDER THICKNESS OF 2PX -->
-              <button id="reset-button" class=" bg-blue-300 mt-2 rounded-lg cursor-pointer border-white border-2">PLAY AGAIN</button>
+              <button id="reset-button" class=" bg-blue-300 mt-2 p-4 rounded-lg cursor-pointer border-white border-2 ml-[25%] w-[50%] text-center dark:border-black dark:bg-green-800 dark:text-white">PLAY AGAIN</button>
         </div>
 
         <!-- ADDED FOOTER -->
-        <footer class="text-lg font-semibold">&copy;By:The Tech Titans</footer>
+        <footer class="text-lg font-semibold dark:text-white">&copy;By:The Tech Titans</footer>
         
         <script src="./js/index.js"></script>
     </body>
