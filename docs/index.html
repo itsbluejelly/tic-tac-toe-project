@@ -26,16 +26,18 @@
             <h2 class="font-bold dark:text-white"> Choose the Icon you shall use</h2>
             
             <!-- THE DIV CONTAIN THE THREE BUTTONS IS A FLEX ITEM WITH COLUMN ARRANGEMENT AND A GAP OF 8PX-->
-            <div class="flex flex-col bg-green-600 gap-2 dark:bg-blue-700">
+            <div class="grid grid-flow-row grid-cols-2 bg-green-600 gap-2 dark:bg-blue-700">
                 <!-- THE DIV HOLDING THE FIRST 2 ANIMATED BUTTONS IS A FLEX ITEM WITH SPACE AROUND JUSTIFY PROPERTY -->
-                <div class="flex justify-around">
+                <div class="col-span-2 flex justify-around">
                     <!-- EACH BUTTON HAS A MARGIN OF 8PX AT THE TOP AND A BORDER OF 2PX THICK -->
                     <button class="p-2 bg-green-300 mt-2 rounded-lg cursor-pointer border-white border-2 dark:bg-slate-600 dark:border-black dark:text-white focus-within:animate-pull-button" id="player-x-button">PLAYER X</button>
                     <button class="p-2 bg-blue-300 mt-2 rounded-lg cursor-pointer border-white border-2  dark:bg-green-800 dark:border-black dark:text-white
                     focus-within:animate-pull-button" id="player-o-button">PLAYER O</button>
                 </div>
                 
-                <button class=" bg-green-300 mt-2 rounded-lg cursor-pointer border-white border-2 w-[50%] mx-auto mb-3  dark:bg-slate-600 p-2 dark:text-white dark:border-black" id="play-game-button">PLAY GAME</button>
+                <button class="col-span-2 w-[50%] p-2 bg-blue-300 mt-2 rounded-lg mx-auto cursor-pointer border-white border-2  dark:bg-green-800 dark:border-black dark:text-white focus-within:animate-pull-button" id="help-button">HELP</button>
+
+                <button class="col-span-2 bg-green-300 mt-2 rounded-lg cursor-pointer border-white border-2 w-[75%] mx-auto mb-3  dark:bg-slate-600 p-2 dark:text-white dark:border-black focus-within:animate-pull-button" id="play-game-button">PLAY GAME</button>
             </div>
         </div>
 
@@ -56,7 +58,7 @@
               </div>
               
               <!-- THE RESET BUTTON HAS A MARGIN AT THE TOP OF 8PX AND A BORDER RADIUS OF 8PX AND A BORDER THICKNESS OF 2PX -->
-              <button id="reset-button" class=" bg-blue-300 mt-2 p-4 rounded-lg cursor-pointer border-white border-2 ml-[25%] w-[50%] text-center dark:border-black dark:bg-green-800 dark:text-white">PLAY AGAIN</button>
+              <button id="reset-button" class=" bg-blue-300 mt-2 p-4 rounded-lg cursor-pointer border-white border-2 ml-[25%] w-[50%] text-center dark:border-black dark:bg-green-800 dark:text-white focus-within:animate-pull-button">PLAY AGAIN</button>
         </div>
 
         <!-- ADDED FOOTER WITH ANIMATION -->
