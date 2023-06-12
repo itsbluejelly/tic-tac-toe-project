@@ -89,13 +89,13 @@ function checkWinner(){
 }
 
 // FUNCTION IF EITHER PLAYER BUTTON IS CLICKED
-playerOBtn.addEventListener("dblclick", () =>{
+playerOBtn.addEventListener("click", () =>{
     chosenPlayer = "O";
     showPlayer.innerText = `YOU ARE PLAYER ${chosenPlayer}`;
     showPlayer.classList.remove("hidden")
 })
 
-playerXBtn.addEventListener("dblclick", () =>{
+playerXBtn.addEventListener("click", () =>{
     chosenPlayer = "X";
     showPlayer.innerText = `YOU ARE PLAYER ${chosenPlayer}`;
     showPlayer.classList.remove("hidden")
